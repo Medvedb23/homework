@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML structure by БЭМ</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="#">
+          <img src="#" alt="Company logo">
+        </a>
+      </div>
+
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--current">
+            <a class="nav__link" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Listing</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Properties</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Pages</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="button button--login">
+          <span class="button__icon"></span>
+          <span class="button__text">Sign In</span>
+        </button>
+        <button class="button button--primary">
+          <span class="button__text">Submit Property</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="home">
+      <div class="home__container">
+        <h1 class="home__title">Find Your Dream Home</h1>
+
+        <div class="home__content">
+          <p class="home__description">
+            We are a real estate agency that will help you find the best residence you
+            dream of, let's discuss for your dream house?
+          </p>
+
+          <ul class="home__actions">
+            <li class="home__action-item">
+              <a href="#" class="button button--primary button--active">For Rent</a>
+            </li>
+            <li class="home__action-item">
+              <a href="#" class="button button--secondary">For Sale</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="search-form home__search-form">
+          <div class="search-form__field">
+            <label for="property-type" class="search-form__label">Type</label>
+            <select id="property-type" name="property-type" class="search-form__select">
+              <option value="">All</option>
+              <option value="villa">Villa</option>
+              <option value="studio">Studio</option>
+              <option value="office">Office</option>
+              <option value="house">House</option>
+            </select>
+          </div>
+
+          <div class="search-form__field">
+            <label for="location" class="search-form__label">Location</label>
+            <input type="text" id="location" class="search-form__input" placeholder="Search Location">
+          </div>
+
+          <div class="search-form__field">
+            <label for="keyword" class="search-form__label">Keyword</label>
+            <input type="text" id="keyword" class="search-form__input" placeholder="Search Keyword">
+          </div>
+
+          <div class="search-form__buttons">
+            <button type="submit" class="button button--primary">Advanced Search</button>
+            <button type="button" class="button button--secondary">Search</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
