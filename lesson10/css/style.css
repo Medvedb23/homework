@@ -52,4 +52,5 @@ body {
 
 .box span {
     transition: 1s 5.7s;
+    cursor: context-menu;
 }
