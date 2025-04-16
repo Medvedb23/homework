@@ -1,0 +1,24 @@
+body {
+    background: #262628;
+    color: white;
+}
+
+.block-white {
+    width: 50%;
+    height: 130px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.block-white__circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 60%;
+    left: 15%;
+    background-color: red;
+    border-radius: 50%;
+}
